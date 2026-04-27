@@ -44,7 +44,7 @@ options.AddArgument(@"--user-data-dir=C:\SeleniumChromeProfile");
 options.AddArgument("--start-maximized");
 
 using var driver = new ChromeDriver(options);
-var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
+var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
 
 Console.WriteLine("Abra/autentique com certificado se necessário.");
 Console.WriteLine("Pressione ENTER para iniciar o processamento...");
@@ -86,7 +86,7 @@ for (var i = 0; i < chaves.Count; i++)
         Log("Download/salvamento concluído.");
         Log($"Feito download de {baixados} notas de um total de {chaves.Count}.");
 
-        var delay = random.Next(500, 2001);
+        var delay = 0;
         Log($"Aguardando {delay / 1000.0:N1}s antes da próxima chave...");
         Thread.Sleep(delay);
     }
@@ -104,7 +104,7 @@ for (var i = 0; i < chaves.Count; i++)
             Url = driver.Url
         });
 
-        var delay = random.Next(2000, 7001);
+        var delay = random.Next(1000, 2000);
         Log($"Erro registrado. Aguardando {delay / 1000.0:N1}s e seguindo...");
         Thread.Sleep(delay);
     }
@@ -152,10 +152,10 @@ static CTeData ExtrairCte(HtmlDocument doc, string chaveFallback)
     var totais = PegarSecao(root, 6);
     var impostos = PegarSecao(root, 7);
     var rodoviario = PegarSecao(root, 8);
-    var carga = PegarSecao(root, 9);
-    var autorizados = PegarSecao(root, 10);
-    var responsavelTecnico = PegarSecao(root, 11);
-    var suplementares = PegarSecao(root, 12);
+    var carga = PegarSecaoPorTitulo(root, "Informações da Carga");
+    var autorizados = PegarSecaoPorTitulo(root, "Autorizados ao Download");
+    var responsavelTecnico = PegarSecaoPorTitulo(root, "Responsável Técnico");
+    var suplementares = PegarSecaoPorTitulo(root, "Informações Suplementares");
 
     var emit = ExtrairParticipanteDetalhado(emitenteDetalhes, "enderEmit", incluiPais: false);
     var toma = ExtrairParticipanteDetalhado(tomadorDetalhes, "enderToma", incluiPais: true);
@@ -686,6 +686,51 @@ static object? MontarRespTec(XNamespace ns, ResponsavelTecnicoData resp)
 static HtmlNode? PegarSecao(HtmlNode root, int indice)
 {
     return root.SelectSingleNode($"./div[{indice}]");
+}
+
+static HtmlNode? PegarSecaoPorTitulo(HtmlNode root, params string[] titulosEsperados)
+{
+    var titulosNormalizados = titulosEsperados
+        .Select(NormalizarTituloSecao)
+        .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+    return root.SelectNodes("./div")
+        ?.FirstOrDefault(secao => titulosNormalizados.Contains(NormalizarTituloSecao(ExtrairTituloSecao(secao))));
+}
+
+static string ExtrairTituloSecao(HtmlNode? secao)
+{
+    if (secao is null)
+        return "";
+
+    foreach (var child in secao.ChildNodes.Where(node => node.NodeType == HtmlNodeType.Element))
+    {
+        if (child.Name.Equals("table", StringComparison.OrdinalIgnoreCase))
+        {
+            var tituloTabela = child.SelectNodes(".//td")
+                ?.Select(td => Limpar(td.InnerText))
+                .FirstOrDefault(texto => !string.IsNullOrWhiteSpace(texto));
+
+            if (!string.IsNullOrWhiteSpace(tituloTabela))
+                return tituloTabela;
+        }
+
+        if (child.Name.Equals("div", StringComparison.OrdinalIgnoreCase) &&
+            child.GetAttributeValue("class", "").Contains("dfe-titulo", StringComparison.OrdinalIgnoreCase))
+        {
+            var tituloDiv = Limpar(child.InnerText);
+
+            if (!string.IsNullOrWhiteSpace(tituloDiv))
+                return tituloDiv;
+        }
+    }
+
+    return "";
+}
+
+static string NormalizarTituloSecao(string titulo)
+{
+    return RemoverAcentos(titulo).ToUpperInvariant();
 }
 
 static string PegarChave(HtmlDocument doc, HtmlNode div, string fallback)
