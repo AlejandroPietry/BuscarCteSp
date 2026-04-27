@@ -7,7 +7,9 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-var arquivoChaves = @"C:\Users\pietr\Downloads\Chaves Julho 2022.txt";
+//var arquivoChaves = @"C:\Users\pietr\Downloads\Chaves Julho 2022.txt";
+var arquivoChaves = @"C:\Users\pietr\Downloads\chaveQueHouveramErros.txt";
+
 var outputDir = @"C:\Users\pietr\OneDrive\Documentos\xmlrobo";
 
 //if (args.Contains("--sample-html", StringComparer.OrdinalIgnoreCase))
@@ -206,26 +208,31 @@ static IdeData ExtrairIde(
     ParticipanteData dest,
     ParticipanteData toma)
 {
-    var dataEmissao = Texto(principal, "./table[2]/tbody/tr[4]/td[3]");
-    var envio = SepararUfCidade(Texto(principal, "./table[10]/tbody/tr[4]/td[1]"));
-    var tipoServico = SepararCodigoDescricao(Texto(principal, "./table[8]/tbody/tr[2]/td[1]"));
-    var modalTexto = Texto(principal, "./table[8]/tbody/tr[2]/td[2]");
+    var tabelaIdentificacao = PegarTabelaPorCabecalhos(principal, "Numero", "Serie", "Data Emissao");
+    var tabelaServico = PegarTabelaPorCabecalhos(principal, "Tipo Servico", "Modal", "Finalidade", "Forma");
+    var tabelaNatureza = PegarTabelaPorCabecalhos(principal, "Natureza da Prestacao", "CFOP", "Digest Value do CT-e");
+    var tabelaTrajeto = PegarTabelaPorCabecalhos(principal, "Inicio da Prestacao", "Fim da Prestacao", "Envio", "Indicador do Tomador");
+
+    var dataEmissao = TextoCelulaTabela(tabelaIdentificacao, 4, 3);
+    var envio = SepararUfCidade(TextoCelulaTabela(tabelaTrajeto, 4, 1));
+    var tipoServico = SepararCodigoDescricao(TextoCelulaTabela(tabelaServico, 2, 1));
+    var modalTexto = TextoCelulaTabela(tabelaServico, 2, 2);
     var modal = SepararCodigoDescricao(modalTexto);
-    var finalidade = SepararCodigoDescricao(Texto(principal, "./table[8]/tbody/tr[2]/td[3]"));
-    var formaEmissao = SepararCodigoDescricao(Texto(principal, "./table[8]/tbody/tr[2]/td[4]"));
-    var indicacaoTomador = SepararCodigoDescricao(Texto(principal, "./table[10]/tbody/tr[6]/td[1]"));
+    var finalidade = SepararCodigoDescricao(TextoCelulaTabela(tabelaServico, 2, 3));
+    var formaEmissao = SepararCodigoDescricao(TextoCelulaTabela(tabelaServico, 2, 4));
+    var indicacaoTomador = SepararCodigoDescricao(TextoCelulaTabela(tabelaTrajeto, 6, 1));
     var tomaCodigo = DeterminarCodigoTomador(toma, emit, rem, dest);
     var municipioEnvioCodigo = ResolverCodigoMunicipio(envio.Uf, envio.Cidade, principal?.OwnerDocument);
 
     return new IdeData
     {
         CUf = chave[..2],
-        CCt = chave.Substring(35, 8),////*[@id="divImpressao"]/div[1]/table[9]/tbody/tr[2]/td[2]
-        Cfop = Texto(principal, "./table[9]/tbody/tr[2]/td[2]"),
-        NatOp = Texto(principal, "./table[9]/tbody/tr[2]/td[1]"),
+        CCt = chave.Substring(35, 8),
+        Cfop = TextoCelulaTabela(tabelaNatureza, 2, 2),
+        NatOp = TextoCelulaTabela(tabelaNatureza, 2, 1),
         Mod = "57",
-        Serie = Numeros(Texto(principal, "./table[2]/tbody/tr[4]/td[2]")),
-        NCt = Numeros(Texto(principal, "./table[2]/tbody/tr[4]/td[1]")),
+        Serie = Numeros(TextoCelulaTabela(tabelaIdentificacao, 4, 2)),
+        NCt = Numeros(TextoCelulaTabela(tabelaIdentificacao, 4, 1)),
         DhEmi = ConverterDataHoraBrParaIso(dataEmissao),
         TpImp = "1",
         TpEmis = ValorOuPadrao(formaEmissao.Codigo, "1"),
@@ -250,7 +257,7 @@ static IdeData ExtrairIde(
         IndIeToma = indicacaoTomador.Codigo,
         Toma = tomaCodigo,
         ModalDescricao = modalTexto,
-        DigestValue = Texto(principal, "./table[9]/tbody/tr[2]/td[3]")
+        DigestValue = TextoCelulaTabela(tabelaNatureza, 2, 3)
     };
 }
 
@@ -752,6 +759,34 @@ static string PegarChave(HtmlDocument doc, HtmlNode div, string fallback)
 static string Texto(HtmlNode? contexto, string xpath)
 {
     return Limpar(contexto?.SelectSingleNode(xpath)?.InnerText);
+}
+
+static HtmlNode? PegarTabelaPorCabecalhos(HtmlNode? secao, params string[] cabecalhosEsperados)
+{
+    if (secao is null)
+        return null;
+
+    var cabecalhosNormalizados = cabecalhosEsperados
+        .Select(NormalizarTituloSecao)
+        .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+    return secao.SelectNodes("./table")
+        ?.FirstOrDefault(tabela =>
+        {
+            var cabecalhosTabela = tabela
+                .SelectNodes("./thead/tr/th | ./tbody/tr/th | ./tr/th")
+                ?.Select(th => NormalizarTituloSecao(th.InnerText))
+                .Where(texto => !string.IsNullOrWhiteSpace(texto))
+                .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+            return cabecalhosTabela is not null && cabecalhosNormalizados.All(cabecalhosTabela.Contains);
+        });
+}
+
+static string TextoCelulaTabela(HtmlNode? tabela, int linha, int coluna)
+{
+    var row = tabela?.SelectSingleNode($"./tbody/tr[{linha}] | ./tr[{linha}]");
+    return ValorTd(row, coluna);
 }
 
 static string ValorTd(HtmlNode? row, int indice)
