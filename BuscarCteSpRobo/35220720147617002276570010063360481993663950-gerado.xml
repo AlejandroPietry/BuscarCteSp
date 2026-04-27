@@ -1,0 +1,80 @@
+﻿<cteProc versao="3.00" xmlns="http://www.portalfiscal.inf.br/cte">
+  <CTe>
+    <infCte Id="CTe35220720147617002276570010063360481993663950" versao="3.00">
+      <ide>
+        <cUF>35</cUF>
+        <cCT>99366395</cCT>
+        <CFOP></CFOP>
+        <natOp></natOp>
+        <mod>57</mod>
+        <serie>1</serie>
+        <nCT>6336048</nCT>
+        <dhEmi>01/07/2022 - 02:57:00  -03:00</dhEmi>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>0</cDV>
+        <tpAmb>1</tpAmb>
+        <tpCTe>0</tpCTe>
+        <procEmi>0</procEmi>
+        <verProc>RECONSTRUIDO_HTML_CONSULTA_PUBLICA</verProc>
+        <modal>01</modal>
+      </ide>
+      <emit>
+        <CNPJ>20147617002276</CNPJ>
+        <IE>114387171114</IE>
+        <xNome>Jamef Transportes EIRELI - SAO</xNome>
+      </emit>
+      <rem>
+        <CNPJ>49058654000165</CNPJ>
+        <IE>336486138110</IE>
+        <xNome>FLEXFORM INDUSTRIA E COMERCIO DE MOVEIS</xNome>
+      </rem>
+      <dest>
+        <CPF>07116763562</CPF>
+        <xNome>PRISCILA PEDREIRA BARROS</xNome>
+      </dest>
+      <toma3>
+        <toma>0</toma>
+      </toma3>
+      <vPrest>
+        <vTPrest>82.11</vTPrest>
+        <vRec>82.11</vRec>
+      </vPrest>
+      <imp>
+        <ICMS>
+          <ICMS00>
+            <CST>00</CST>
+            <vBC>82.11</vBC>
+            <pICMS>7.00</pICMS>
+            <vICMS>5.75</vICMS>
+          </ICMS00>
+        </ICMS>
+        <vTotTrib>5.75</vTotTrib>
+      </imp>
+      <infCTeNorm>
+        <infCarga>
+          <vCarga>510.00</vCarga>
+          <proPred>CONFORME NOTA FISCAL CLIENTE</proPred>
+          <xOutCat>FRACIONADA</xOutCat>
+        </infCarga>
+        <infDoc>
+          <infNFe>
+            <chave>35220649058654000165550010002824291245748491</chave>
+          </infNFe>
+        </infDoc>
+      </infCTeNorm>
+    </infCte>
+  </CTe>
+  <protCTe versao="3.00">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>RECONSTRUIDO_HTML</verAplic>
+      <chCTe>35220720147617002276570010063360481993663950</chCTe>
+      <dhRecbto>01/07/2022 - 02:57:47  -03:00</dhRecbto>
+      <nProt>35220720147617002276570010063360481993663950633604810107202202570003001352256190003492014761700227607116763562010720220257470300479952182115758211135225619000349</nProt>
+      <digVal></digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso do CT-e</xMotivo>
+    </infProt>
+  </protCTe>
+</cteProc>

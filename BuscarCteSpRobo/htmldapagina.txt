@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Consulta P&#xFA;blica CT-e
+ | Exibir DF-e        | Sefaz-SP
+    </title>
+    <link rel="icon" type="image/x-icon" href="/CTeConsulta/favicon.ico" />
+    
+        <link rel="stylesheet" href="/CTeConsulta/_content/DFeMvcLib/lib/bootstrap/css/bootstrap.css" />
+    
+    
+    <link rel="stylesheet" href="/CTeConsulta/_content/DFeMvcLib/css/site.css" />    
+    
+    
+    
+        <link rel="stylesheet" href="/CTeConsulta/_content/DFeMvcLib/lib/bootstrap-icons/font/bootstrap-icons.css" />
+    
+    
+    
+                <link href="/CTeConsulta/css/xsltImpressao.css" rel="stylesheet" type="text/css" />
+
+
+
+</head>
+<body>
+    <div id="main-container" class="ms-core-overlay">
+        <header id="header">
+            <div class="header-content-container">
+                <div class="container">
+                    <div class="container fill" id="conteudoLogotipo">
+                        <div class="row">
+                            <div>
+                                <p class="font-14px font-red header-font header-content-title margint5">
+                                    Governo do Estado de São Paulo
+                                </p>
+                                <h1 class="font-24px font-gray header-font header-content-site reset-margin ">
+                                    Secretaria da Fazenda e Planejamento
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="container" id="body">
+            
+
+
+<h4 class="font-dark-gray" style="text-align: center;">DF-e [35220720147617002276570010063360481993663950]</h4><hr></hr>
+<div class="center-block text-center">
+        <button class="btn btn-light" onclick="javascript:$('#divImpressao').print();">
+            <span class="bi bi-printer" /> Imprimir
+        </button>
+    <button class="btn btn-light" OnClick="window.location.href='/CTeConsulta'">
+        Voltar
+    </button>
+</div>
+<hr />
+<div id="divImpressao">
+  <div class="dfe" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Dados CT-e</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Identificação</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th colspan="3">Chave de Acesso</th>
+      </tr>
+      <tr>
+        <td colspan="3">35-2207-<strong xmlns:msxsl="urn:schemas-microsoft-com:xslt">20147617002276</strong>-57-001-006336048-199366395-0</td>
+      </tr>
+      <tr>
+        <th width="30%">Número</th>
+        <th width="30%">Série</th>
+        <th width="40%">Data Emissão</th>
+      </tr>
+      <tr>
+        <td>6336048</td>
+        <td>1</td>
+        <td>01/07/2022
+				- 02:57:00
+				 -03:00</td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Valores</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="25%">Valor Total Serviço</th>
+        <th width="25%">Base Cálculo ICMS</th>
+        <th width="20%">Valor ICMS</th>
+      </tr>
+      <tr>
+        <td>82,11</td>
+        <td>82,11</td>
+        <td>5,75</td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Emitente</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <th width="15%">CNPJ</th>
+        <th width="50%">Nome / Razão Social</th>
+        <th width="20%">Inscrição Estadual</th>
+        <th width="15%">UF</th>
+      </tr>
+      <tr>
+        <td>20.147.617/0022-76</td>
+        <td>Jamef Transportes EIRELI - SAO</td>
+        <td>114387171114</td>
+        <td>SP</td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Tomador</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <th width="15%">CNPJ</th>
+        <th width="50%">Nome / Razão Social</th>
+        <th width="20%">Inscrição Estadual</th>
+        <th width="15%">UF</th>
+      </tr>
+      <tr>
+        <td>49.058.654/0001-65</td>
+        <td>FLEXFORM INDUSTRIA E COMERCIO DE MOVEIS</td>
+        <td>336486138110</td>
+        <td>SP</td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Remetente</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <th width="15%">CNPJ</th>
+        <th width="50%">Nome / Razão Social</th>
+        <th width="20%">Inscrição Estadual</th>
+        <th width="15%">UF</th>
+      </tr>
+      <tr>
+        <td>49.058.654/0001-65</td>
+        <td>FLEXFORM INDUSTRIA E COMERCIO DE MOVEIS</td>
+        <td>336486138110</td>
+        <td>SP</td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Destinatário</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <th width="15%">CPF</th>
+        <th width="70%">Nome</th>
+        <th width="15%">UF</th>
+      </tr>
+      <tr>
+        <td>071.167.635-62</td>
+        <td>PRISCILA PEDREIRA BARROS</td>
+        <td>BA</td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Características</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="40%">Tipo Serviço</th>
+        <th width="20%">Modal</th>
+        <th width="20%">Finalidade</th>
+        <th width="20%">Forma</th>
+      </tr>
+      <tr>
+        <td><span title="0 - Normal" xmlns:msxsl="urn:schemas-microsoft-com:xslt">0 - Normal</span></td>
+        <td><span title="01 - Rodoviário" xmlns:msxsl="urn:schemas-microsoft-com:xslt">01 - Rodoviário</span></td>
+        <td><span title="0 - CT-e Normal" xmlns:msxsl="urn:schemas-microsoft-com:xslt">0 - CT-e Normal</span></td>
+        <td><span title="1 - Normal" xmlns:msxsl="urn:schemas-microsoft-com:xslt">1 - Normal</span></td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="40%">Natureza da Prestação</th>
+        <th width="20%">CFOP</th>
+        <th width="40%">Digest Value do CT-e</th>
+      </tr>
+      <tr>
+        <td>PREST. SERV. TRANSPORTE A ESTABELECIMENTO INDUSTRIAL</td>
+        <td>6352</td>
+        <td>47+g9z9z/ZXF5TncoVs+2Me1lWs=</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="50%">Início da Prestação</th>
+        <th width="50%">Fim da Prestação</th>
+      </tr>
+      <tr>
+        <td>SP - GUARULHOS</td>
+        <td>BA - SALVADOR</td>
+      </tr>
+      <tr>
+        <th colspan="2">Envio</th>
+      </tr>
+      <tr>
+        <td colspan="2">SP - SAO PAULO</td>
+      </tr>
+      <tr>
+        <th colspan="2">Indicador do Tomador</th>
+      </tr>
+      <tr>
+        <td colspan="2"><span title="1 - Contribuinte ICMS" xmlns:msxsl="urn:schemas-microsoft-com:xslt">1 - Contribuinte ICMS</span></td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Situação Atual: Autorizado</div>
+    <table id="tbSituacao" class="dfe-tabela hide" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="55%">Evento</th>
+        <th width="20%">Protocolo</th>
+        <th width="25%">Data/Hora</th>
+      </tr>
+      <tr>
+        <td><span>
+										Autorização de Uso (Cód.: 110100)
+									</span></td>
+        <td>
+          <div class="modal fade" id="evAutorizacao" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="evAutorizacaoLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+              <div class="modal-content">
+                <div class="modal-header"><button class="btn btn-light" onclick="javascript:$('#ev110100').print();"><span class="bi bi-printer"></span></button><h1 class="modal-title fs-5" id="evAutorizacaoLabel">
+														Autorização de Uso
+													</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                <div class="modal-body">
+                  <div class="dfe" id="ev110100">
+                    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados CT-e</div>
+                    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                      <thead>
+                        <tr>
+                          <th>Chave de Acesso</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>35-2207-<strong xmlns:msxsl="urn:schemas-microsoft-com:xslt">20147617002276</strong>-57-001-006336048-199366395-0</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                      <thead>
+                        <tr>
+                          <th width="20%">Número</th>
+                          <th width="20%">Série</th>
+                          <th width="30%">Data de Emissão</th>
+                          <th width="30%">Protocolo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>6336048</td>
+                          <td>1</td>
+                          <td>01/07/2022
+				- 02:57:00
+				 -03:00</td>
+                          <td>135225619000349</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="card" style="margin-bottom: 10px;" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><h7 class="card-header dfe-titulo-card"><strong>Dados do Emitente</strong></h7><div class="card-body dfe">
+                        <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                          <tr>
+                            <th width="70%">
+								Razão Social
+							</th>
+                            <th width="20%">CNPJ</th>
+                            <th width="10%">UF</th>
+                          </tr>
+                          <tr>
+                            <td>Jamef Transportes EIRELI - SAO</td>
+                            <td>20.147.617/0022-76</td>
+                            <td>SP</td>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Destinatário</div>
+                    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                      <tr>
+                        <th width="70%">
+								Razão Social
+							</th>
+                        <th width="20%">CPF</th>
+                        <th width="10%">UF</th>
+                      </tr>
+                      <tr>
+                        <td>PRISCILA PEDREIRA BARROS</td>
+                        <td>071.167.635-62</td>
+                        <td>
+                        </td>
+                      </tr>
+                    </table>
+                    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados Gerais</div>
+                    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                      <tr>
+                        <th>Data e hora da Autorização de uso</th>
+                      </tr>
+                      <tr>
+                        <td>01/07/2022
+								às
+								02:57:47
+					 -03:00</td>
+                      </tr>
+                      <tr>
+                        <th>Digest Value do CT-e</th>
+                      </tr>
+                      <tr>
+                        <td>47+g9z9z/ZXF5TncoVs+2Me1lWs=</td>
+                      </tr>
+                    </table>
+                    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                      <tr>
+                        <th>Base de cálculo do ICMS</th>
+                        <th>Valor do ICMS</th>
+                        <th>Valor Total do Serviço</th>
+                      </tr>
+                      <tr>
+                        <td>82,11</td>
+                        <td>5,75</td>
+                        <td>82,11</td>
+                      </tr>
+                    </table>
+                    <div class="dfe-titulo-card" style="text-align: center"><strong>
+					Válida somente com a apresentação conjunta do DACTE (Documento Auxiliar do Conhecimento de Transporte Eletrônico)
+				</strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>135225619000349</td>
+        <td>01/07/2022
+				- 02:57:47
+				 -03:00</td>
+      </tr>
+      <tr xmlns:ev="http://www.portalfiscal.inf.br/cte">
+        <td><span>Autorizado MDF-e (Cód.: 310610)
+									</span></td>
+        <td><span>135225620117531<div class="modal fade" id="ev135225620117531" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ev135225620117531Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header"><button class="btn btn-light" onclick="javascript:$('#ev310610').print();"><span class="bi bi-printer"></span></button><h1 class="modal-title fs-5" id="ev135225620117531Label">Autorizado MDF-e</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                  <div class="modal-body">
+                    <div class="dfe" id="ev310610">
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Autor do Evento</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th class="col-3">CNPJ</th>
+                            <th class="col-3">Ambiente</th>
+                            <th class="col-3">Versão Evento</th>
+                            <th class="col-3">Órgão Receptor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>87.124.582/0001-04</td>
+                            <td>
+										1 - Produção
+									</td>
+                            <td>3.00</td>
+                            <td>35</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados CT-e</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th>Chave de Acesso</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>35-2207-<strong xmlns:msxsl="urn:schemas-microsoft-com:xslt">20147617002276</strong>-57-001-006336048-199366395-0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th class="col-3">Número</th>
+                            <th class="col-3">Série</th>
+                            <th class="col-3">Data de Emissão</th>
+                            <th class="col-3">Protocolo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>6336048</td>
+                            <td>1</td>
+                            <td>01/07/2022
+				- 02:57:00
+				 -03:00</td>
+                            <td>135225619000349</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Emitente</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <tr>
+                          <th width="70%">
+								Razão Social
+							</th>
+                          <th width="20%">CNPJ</th>
+                          <th width="10%">UF</th>
+                        </tr>
+                        <tr>
+                          <td>Jamef Transportes EIRELI - SAO</td>
+                          <td>20.147.617/0022-76</td>
+                          <td>SP</td>
+                        </tr>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Registro do Evento</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th width="5%">Status</th>
+                            <th>Descrição</th>
+                            <th width="30%">Data/Hora</th>
+                            <th width="25%">Protocolo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>135</td>
+                            <td>Evento registrado e vinculado a $APP_NAME_FORMATED$.</td>
+                            <td>01/07/2022
+				- 07:40:48
+				 -03:00</td>
+                            <td>135225620117531</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Emitente MDF-e</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <tr>
+                          <th width="30%">CNPJ</th>
+                          <th width="15%">IE</th>
+                          <th width="55%">Emitente</th>
+                        </tr>
+                        <tr>
+                          <td>20.147.617/0022-76</td>
+                          <td>114387171114</td>
+                          <td>JAMEF TRANSPORTES LIMITADA</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></span></td>
+        <td><span>01/07/2022
+				- 07:40:48
+				 -03:00</span></td>
+      </tr>
+      <tr xmlns:ev="http://www.portalfiscal.inf.br/cte">
+        <td><span>Autorizado MDF-e (Cód.: 310610)
+									</span></td>
+        <td><span>135225632209614<div class="modal fade" id="ev135225632209614" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ev135225632209614Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header"><button class="btn btn-light" onclick="javascript:$('#ev310610').print();"><span class="bi bi-printer"></span></button><h1 class="modal-title fs-5" id="ev135225632209614Label">Autorizado MDF-e</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                  <div class="modal-body">
+                    <div class="dfe" id="ev310610">
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Autor do Evento</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th class="col-3">CNPJ</th>
+                            <th class="col-3">Ambiente</th>
+                            <th class="col-3">Versão Evento</th>
+                            <th class="col-3">Órgão Receptor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>87.124.582/0001-04</td>
+                            <td>
+										1 - Produção
+									</td>
+                            <td>3.00</td>
+                            <td>35</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados CT-e</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th>Chave de Acesso</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>35-2207-<strong xmlns:msxsl="urn:schemas-microsoft-com:xslt">20147617002276</strong>-57-001-006336048-199366395-0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th class="col-3">Número</th>
+                            <th class="col-3">Série</th>
+                            <th class="col-3">Data de Emissão</th>
+                            <th class="col-3">Protocolo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>6336048</td>
+                            <td>1</td>
+                            <td>01/07/2022
+				- 02:57:00
+				 -03:00</td>
+                            <td>135225619000349</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Emitente</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <tr>
+                          <th width="70%">
+								Razão Social
+							</th>
+                          <th width="20%">CNPJ</th>
+                          <th width="10%">UF</th>
+                        </tr>
+                        <tr>
+                          <td>Jamef Transportes EIRELI - SAO</td>
+                          <td>20.147.617/0022-76</td>
+                          <td>SP</td>
+                        </tr>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Registro do Evento</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th width="5%">Status</th>
+                            <th>Descrição</th>
+                            <th width="30%">Data/Hora</th>
+                            <th width="25%">Protocolo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>135</td>
+                            <td>Evento registrado e vinculado a $APP_NAME_FORMATED$.</td>
+                            <td>01/07/2022
+				- 07:40:48
+				 -03:00</td>
+                            <td>135225620117531</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Emitente MDF-e</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <tr>
+                          <th width="30%">CNPJ</th>
+                          <th width="15%">IE</th>
+                          <th width="55%">Emitente</th>
+                        </tr>
+                        <tr>
+                          <td>20.147.617/0022-76</td>
+                          <td>114387171114</td>
+                          <td>JAMEF TRANSPORTES LIMITADA</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></span></td>
+        <td><span>02/07/2022
+				- 20:37:52
+				 -03:00</span></td>
+      </tr>
+      <tr xmlns:ev="http://www.portalfiscal.inf.br/cte">
+        <td><span>Autorizado MDF-e (Cód.: 310610)
+									</span></td>
+        <td><span>135225650439911<div class="modal fade" id="ev135225650439911" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ev135225650439911Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header"><button class="btn btn-light" onclick="javascript:$('#ev310610').print();"><span class="bi bi-printer"></span></button><h1 class="modal-title fs-5" id="ev135225650439911Label">Autorizado MDF-e</h1><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                  <div class="modal-body">
+                    <div class="dfe" id="ev310610">
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Autor do Evento</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th class="col-3">CNPJ</th>
+                            <th class="col-3">Ambiente</th>
+                            <th class="col-3">Versão Evento</th>
+                            <th class="col-3">Órgão Receptor</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>87.124.582/0001-04</td>
+                            <td>
+										1 - Produção
+									</td>
+                            <td>3.00</td>
+                            <td>35</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados CT-e</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th>Chave de Acesso</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>35-2207-<strong xmlns:msxsl="urn:schemas-microsoft-com:xslt">20147617002276</strong>-57-001-006336048-199366395-0</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th class="col-3">Número</th>
+                            <th class="col-3">Série</th>
+                            <th class="col-3">Data de Emissão</th>
+                            <th class="col-3">Protocolo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>6336048</td>
+                            <td>1</td>
+                            <td>01/07/2022
+				- 02:57:00
+				 -03:00</td>
+                            <td>135225619000349</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Emitente</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <tr>
+                          <th width="70%">
+								Razão Social
+							</th>
+                          <th width="20%">CNPJ</th>
+                          <th width="10%">UF</th>
+                        </tr>
+                        <tr>
+                          <td>Jamef Transportes EIRELI - SAO</td>
+                          <td>20.147.617/0022-76</td>
+                          <td>SP</td>
+                        </tr>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Registro do Evento</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <thead>
+                          <tr>
+                            <th width="5%">Status</th>
+                            <th>Descrição</th>
+                            <th width="30%">Data/Hora</th>
+                            <th width="25%">Protocolo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>135</td>
+                            <td>Evento registrado e vinculado a $APP_NAME_FORMATED$.</td>
+                            <td>01/07/2022
+				- 07:40:48
+				 -03:00</td>
+                            <td>135225620117531</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados do Emitente MDF-e</div>
+                      <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+                        <tr>
+                          <th width="30%">CNPJ</th>
+                          <th width="15%">IE</th>
+                          <th width="55%">Emitente</th>
+                        </tr>
+                        <tr>
+                          <td>20.147.617/0022-76</td>
+                          <td>114387171114</td>
+                          <td>JAMEF TRANSPORTES LIMITADA</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div></span></td>
+        <td><span>06/07/2022
+				- 10:18:03
+				 -03:00</span></td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Dados do Emitente</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo">Dados Gerais</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="30%">CNPJ</th>
+        <th width="70%">Razão Social</th>
+      </tr>
+      <tr>
+        <td>20.147.617/0022-76</td>
+        <td>Jamef Transportes EIRELI - SAO</td>
+      </tr>
+      <tr>
+        <th width="30%">Inscrição Estadual</th>
+        <th width="70%">Nome Fantasia</th>
+      </tr>
+      <tr>
+        <td>114387171114</td>
+        <td>Jamef</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%"></table>
+    <div class="dfe-titulo">Endereço</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="70%">Endereço</th>
+        <th width="30%">Bairro / Distrito</th>
+      </tr>
+      <tr>
+        <td>RUA MIGUEL MENTEM
+			, 500</td>
+        <td>VILA GUILHERME</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="60%">Município</th>
+        <th width="15%">UF</th>
+        <th width="25%">CEP</th>
+      </tr>
+      <tr>
+        <td>SAO PAULO</td>
+        <td>SP</td>
+        <td>02050-010</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Dados do Tomador (Remetente)</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo">Dados Gerais</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="30%">CNPJ</th>
+        <th width="70%">Razão Social</th>
+      </tr>
+      <tr>
+        <td>49.058.654/0001-65</td>
+        <td>FLEXFORM INDUSTRIA E COMERCIO DE MOVEIS</td>
+      </tr>
+      <tr>
+        <th width="30%">Inscrição Estadual</th>
+        <th width="70%">Nome Fantasia</th>
+      </tr>
+      <tr>
+        <td>336486138110</td>
+        <td>FLEXFORM INDUSTRIA E</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%"></table>
+    <div class="dfe-titulo">Endereço</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="70%">Endereço</th>
+        <th width="30%">Bairro / Distrito</th>
+      </tr>
+      <tr>
+        <td>AVENIDA  PAPA JOAO PAULO I
+			, 1849</td>
+        <td>BAIRRO - JD. CUMBICA</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="40%">Município</th>
+        <th width="15%">UF</th>
+        <th width="15%">CEP</th>
+        <th width="30%">País</th>
+      </tr>
+      <tr>
+        <td>3518800 - GUARULHOS</td>
+        <td>SP</td>
+        <td>07170-350</td>
+        <td>1058 - BRASIL</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="30%">Telefone</th>
+        <th width="70%">Email</th>
+      </tr>
+      <tr>
+        <td>
+			(01)
+		1 2431 - 5511</td>
+        <td>NFE2@FLEXFORM.COM.BR</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Dados do Remetente</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo">Dados Gerais</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="30%">CNPJ</th>
+        <th width="70%">Razão Social</th>
+      </tr>
+      <tr>
+        <td>49.058.654/0001-65</td>
+        <td>FLEXFORM INDUSTRIA E COMERCIO DE MOVEIS</td>
+      </tr>
+      <tr>
+        <th width="30%">Inscrição Estadual</th>
+        <th width="70%">Nome Fantasia</th>
+      </tr>
+      <tr>
+        <td>336486138110</td>
+        <td>FLEXFORM INDUSTRIA E</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%"></table>
+    <div class="dfe-titulo">Endereço</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="70%">Endereço</th>
+        <th width="30%">Bairro / Distrito</th>
+      </tr>
+      <tr>
+        <td>AVENIDA  PAPA JOAO PAULO I
+			, 1849</td>
+        <td>BAIRRO - JD. CUMBICA</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="40%">Município</th>
+        <th width="15%">UF</th>
+        <th width="15%">CEP</th>
+        <th width="30%">País</th>
+      </tr>
+      <tr>
+        <td>3518800 - GUARULHOS</td>
+        <td>SP</td>
+        <td>07170-350</td>
+        <td>1058 - BRASIL</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="30%">Telefone</th>
+        <th width="70%">Email</th>
+      </tr>
+      <tr>
+        <td>
+			(01)
+		1 2431 - 5511</td>
+        <td>NFE2@FLEXFORM.COM.BR</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Dados do Destinatário</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo">Dados Gerais</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="30%">CPF</th>
+        <th width="70%">Razão Social</th>
+      </tr>
+      <tr>
+        <td>071.167.635-62</td>
+        <td>PRISCILA PEDREIRA BARROS</td>
+      </tr>
+      <tr>
+        <th width="30%">Inscrição Estadual</th>
+        <th width="70%">Nome Fantasia</th>
+      </tr>
+      <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%"></table>
+    <div class="dfe-titulo">Endereço</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="70%">Endereço</th>
+        <th width="30%">Bairro / Distrito</th>
+      </tr>
+      <tr>
+        <td>R RUA JARDIM CASTRO ALVES CASA
+			, 1
+			, CASA 3 - FUNDOS - TERREO</td>
+        <td>CAMINHO DE AREIA</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="40%">Município</th>
+        <th width="15%">UF</th>
+        <th width="15%">CEP</th>
+        <th width="30%">País</th>
+      </tr>
+      <tr>
+        <td>2927408 - SALVADOR</td>
+        <td>BA</td>
+        <td>40440-520</td>
+        <td>1058 - BRASIL</td>
+      </tr>
+    </table>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1" width="100%">
+      <tr>
+        <th width="30%">Telefone</th>
+        <th width="70%">Email</th>
+      </tr>
+      <tr>
+        <td>
+			(07)
+		1 9929 - 5439</td>
+        <td>priscilabarrosppb@gmail.com</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Totais</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Valores</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="50%">Valor Prestação Serviço</th>
+        <th width="50%">Valor a Receber</th>
+      </tr>
+      <tr>
+        <td>82,11</td>
+        <td>82,11</td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Componentes do Valor da Prestação do Serviço</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="50%">Nome</th>
+        <th width="50%">Valor</th>
+      </tr>
+      <tr class="even">
+        <td>Frete Valor</td>
+        <td>3,30</td>
+      </tr>
+      <tr class="odd">
+        <td>Pedagio</td>
+        <td>5,33</td>
+      </tr>
+      <tr class="even">
+        <td>Taxa (ate 100kg</td>
+        <td>3,18</td>
+      </tr>
+      <tr class="odd">
+        <td>Frete Peso (FM)</td>
+        <td>61,32</td>
+      </tr>
+      <tr class="even">
+        <td>TAS</td>
+        <td>5,68</td>
+      </tr>
+      <tr class="odd">
+        <td>GRIS</td>
+        <td>3,30</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Impostos</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados Gerais</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th>CST</th>
+        <th>Percentual de redução da BC</th>
+        <th>Valor do crédito</th>
+      </tr>
+      <tr>
+        <td>00</td>
+        <td>0,00 %
+									</td>
+        <td>0,00</td>
+      </tr>
+      <tr>
+        <th>Base de cálculo ICMS</th>
+        <th>Aliquota ICMS </th>
+        <th>Valor do ICMS </th>
+      </tr>
+      <tr>
+        <td>82,11</td>
+        <td>7,00 %
+									</td>
+        <td>5,75</td>
+      </tr>
+      <tr>
+        <th>Valor Total dos Tributos</th>
+      </tr>
+      <tr>
+        <td>5,75</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Rodoviário</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Informações Gerais</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="100%">RNTRC</th>
+      </tr>
+      <tr>
+        <td>00141391</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Informações da Carga</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Dados da Carga</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="30%">Valor Total da Carga</th>
+        <th width="40%">Produto Predominante</th>
+        <th width="30%">Outras Características</th>
+      </tr>
+      <tr>
+        <td>510,00</td>
+        <td>CONFORME NOTA FISCAL CLIENTE</td>
+        <td>FRACIONADA</td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Quantidades de Carga</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="30%">Unidade</th>
+        <th width="40%">Medida</th>
+        <th width="30%">Quantidade</th>
+      </tr>
+      <tr class="even">
+        <td>01 - KG</td>
+        <td>PESO DECLARADO</td>
+        <td>16,5000</td>
+      </tr>
+      <tr class="odd">
+        <td>01 - KG</td>
+        <td>PESO CUBADO</td>
+        <td>47,7000</td>
+      </tr>
+      <tr class="even">
+        <td>00 - M3</td>
+        <td>METROS CUBICOS</td>
+        <td>0,1590</td>
+      </tr>
+      <tr class="odd">
+        <td>03 - UNIDADE</td>
+        <td>VOLUME</td>
+        <td>1,0000</td>
+      </tr>
+    </table><br><table class="dfe-cabecalho" cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Documentos Fiscais da Carga</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Notas Fiscais Eletrônicas</div>
+    <table id="tbNFe" cellpadding="2" cellspacing="1" class="hide">
+      <tr>
+        <th>Chave de Acesso</th>
+      </tr>
+      <tr class="even">
+        <td>35-2206-<strong xmlns:msxsl="urn:schemas-microsoft-com:xslt">49058654000165</strong>-55-001-000282429-124574849-1</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Autorizados ao Download</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th>CPF/CNPJ</th>
+      </tr>
+      <tr class="even">
+        <td>04.898.488/0001-77</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Responsável Técnico</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <tr>
+        <th width="30%">CNPJ</th>
+        <th width="70%">Contato</th>
+      </tr>
+      <tr>
+        <td>53.113.791/0001-22</td>
+        <td>Hugo Luiz Do Nascimento Silva</td>
+      </tr>
+      <tr>
+        <th width="30%">Fone</th>
+        <th width="70%">Email</th>
+      </tr>
+      <tr>
+        <td>
+			(01)
+		1 2099 - 7067</td>
+        <td>hugo.nascimento@totvs.com.br</td>
+      </tr>
+    </table>
+  </div>
+  <div class="dfe" xmlns:cte="http://www.portalfiscal.inf.br/cte" xmlns:sig="http://www.w3.org/2000/09/xmldsig#">
+    <table class="dfe-cabecalho" cellpadding="0" cellspacing="0" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+      <tr>
+        <td width="10%">
+          <hr size="1" noshade>
+        </td>
+        <td width="50%">Informações Suplementares</td>
+        <td>
+          <hr size="1" noshade>
+        </td>
+      </tr>
+    </table>
+    <div class="dfe-titulo" xmlns:msxsl="urn:schemas-microsoft-com:xslt">QR CODE</div>
+    <table class="dfe-tabela" cellpadding="2" cellspacing="1">
+      <thead>
+        <tr>
+          <th>URL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>https://nfe.fazenda.sp.gov.br/CTeConsulta/qrCode?chCTe=35220720147617002276570010063360481993663950&amp;tpAmb=1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+
+
+
+
+        </div>
+        <footer id="footer">
+            <section id="govsp-rodape">
+                <div class="container rodape">
+                    <div class="logo-rodape">
+                        <p style="font-size: 100%;">
+                            <a href="https://www.saopaulo.sp.gov.br/" target="_blank">
+                                <img src="/CTeConsulta/_content/DFeMvcLib/img/logo_sp.png" alt="Logo" width="206" height="38">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <div class="footer-address">
+                <div class="container fill">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bottom-address">
+                            Secretaria da Fazenda do Estado de São Paulo - Av. Rangel Pestana, 300 - São Paulo / SP - 01017-911 – CNPJ: 46.377.222/0001-29
+                            <br />Fale Conosco: 0800-170110 &nbsp&nbsp|&nbsp&nbsp
+                            <a href="https://portal.fazenda.sp.gov.br/Paginas/PoliticaPrivacidade.aspx">Política de Privacidade</a> &nbsp&nbsp|&nbsp&nbsp
+                            <a href="https://portal.fazenda.sp.gov.br/Paginas/TermoUso.aspx">Termos de Uso</a> &nbsp&nbsp|&nbsp&nbsp Versão SP-CTe-2025-06-11-1
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <script src="/CTeConsulta/_content/DFeMvcLib/lib/bootstrap/js/bootstrap.bundle.js"></script>
+    
+    
+    
+    
+        <script type="text/javascript" src="/CTeConsulta/_content/DFeMvcLib/lib/jquery/jquery.js"></script>
+    
+    
+    
+    
+        <script type="text/javascript" src="/CTeConsulta/_content/DFeMvcLib/js/jQuery.print.js"></script>
+    
+    
+    
+    <script type="text/javascript">
+        function toggleButtonText(buttonId) {
+            var button = document.getElementById(buttonId);
+            var span = button.querySelector('span');
+            if (span.classList.contains('bi-plus')) 
+            {
+                span.classList.remove('bi-plus');
+                span.classList.add('bi-dash');
+            } 
+            else 
+            {
+                span.classList.remove('bi-dash');
+                span.classList.add('bi-plus');
+            }
+        }
+
+    </script>
+
+
+
+</body>
+</html>
