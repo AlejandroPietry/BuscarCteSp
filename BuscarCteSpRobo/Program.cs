@@ -7,8 +7,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-//var arquivoChaves = @"C:\Users\pietr\Downloads\Chaves Julho 2022.txt";
-var arquivoChaves = @"C:\Users\pietr\Downloads\chaveQueHouveramErros.txt";
+var arquivoChaves = @"C:\Users\pietr\Downloads\Chaves Julho 2022.txt";
+//var arquivoChaves = @"C:\Users\pietr\Downloads\chaveQueHouveramErros.txt";
 
 var outputDir = @"C:\Users\pietr\OneDrive\Documentos\xmlrobo";
 
@@ -59,11 +59,29 @@ var random = new Random();
 for (var i = 0; i < chaves.Count; i++)
 {
     var chave = chaves[i];
+    const string mensagemUfInvalida = "CTE emitida em outra uf";
 
     try
     {
         Log("======================================");
         Log($"Processando chave {i + 1}/{chaves.Count}: {chave}");
+
+        if (!chave.StartsWith("35"))
+        {
+            Log($"ERRO na chave {i + 1}/{chaves.Count}: {chave}");
+            Log(mensagemUfInvalida);
+
+            erros.Add(new
+            {
+                Chave = chave,
+                Index = i,
+                Erro = mensagemUfInvalida,
+                DataHora = DateTime.Now,
+                Url = ""
+            });
+
+            continue;
+        }
 
         var url = $"{baseUrl}?ChaveDFe={chave}&UseRecaptcha=False&TipoConsulta=IMPRESSAO";
 
