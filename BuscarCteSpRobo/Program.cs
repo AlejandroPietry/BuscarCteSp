@@ -146,14 +146,14 @@ static CTeData ExtrairCte(HtmlDocument doc, string chaveFallback)
     if (string.IsNullOrWhiteSpace(chave) || chave.Length != 44)
         throw new Exception("Chave CT-e não encontrada ou inválida.");
 
-    var principal = PegarSecao(root, 1);
-    var emitenteDetalhes = PegarSecao(root, 2);
-    var tomadorDetalhes = PegarSecao(root, 3);
-    var remetenteDetalhes = PegarSecao(root, 4);
-    var destinatarioDetalhes = PegarSecao(root, 5);
-    var totais = PegarSecao(root, 6);
-    var impostos = PegarSecao(root, 7);
-    var rodoviario = PegarSecao(root, 8);
+    var principal = PegarSecaoPrincipalPorTitulo(root, "Dados CT-e");
+    var emitenteDetalhes = PegarSecaoPrincipalPorTitulo(root, "Dados do Emitente");
+    var tomadorDetalhes = PegarSecaoPrincipalPorTitulo(root, "Dados do Tomador (Remetente)", "Dados do Tomador");
+    var remetenteDetalhes = PegarSecaoPrincipalPorTitulo(root, "Dados do Remetente");
+    var destinatarioDetalhes = PegarSecaoPrincipalPorTitulo(root, "Dados do Destinatario");
+    var totais = PegarSecaoPrincipalPorTitulo(root, "Totais");
+    var impostos = PegarSecaoPrincipalPorTitulo(root, "Impostos");
+    var rodoviario = PegarSecaoPrincipalPorTitulo(root, "Rodoviario");
     var carga = PegarSecaoPorTitulo(root, "Informações da Carga");
     var autorizados = PegarSecaoPorTitulo(root, "Autorizados ao Download");
     var responsavelTecnico = PegarSecaoPorTitulo(root, "Responsável Técnico");
@@ -690,9 +690,14 @@ static object? MontarRespTec(XNamespace ns, ResponsavelTecnicoData resp)
     );
 }
 
-static HtmlNode? PegarSecao(HtmlNode root, int indice)
+static HtmlNode? PegarSecaoPrincipalPorTitulo(HtmlNode root, params string[] titulosEsperados)
 {
-    return root.SelectSingleNode($"./div[{indice}]");
+    var titulosNormalizados = titulosEsperados
+        .Select(NormalizarTituloSecao)
+        .ToHashSet(StringComparer.OrdinalIgnoreCase);
+
+    return root.SelectNodes("./div")
+        ?.FirstOrDefault(secao => titulosNormalizados.Contains(NormalizarTituloSecao(ExtrairTituloSecaoPrincipal(secao))));
 }
 
 static HtmlNode? PegarSecaoPorTitulo(HtmlNode root, params string[] titulosEsperados)
@@ -703,6 +708,20 @@ static HtmlNode? PegarSecaoPorTitulo(HtmlNode root, params string[] titulosEsper
 
     return root.SelectNodes("./div")
         ?.FirstOrDefault(secao => titulosNormalizados.Contains(NormalizarTituloSecao(ExtrairTituloSecao(secao))));
+}
+
+static string ExtrairTituloSecaoPrincipal(HtmlNode? secao)
+{
+    if (secao is null)
+        return "";
+
+    var tituloCabecalho = secao.SelectSingleNode("./table[contains(@class, 'dfe-cabecalho')]//tr/td[2]")
+        ?? secao.SelectSingleNode("./table[contains(@class, 'dfe-cabecalho')]//tr/td[normalize-space()]");
+
+    if (tituloCabecalho is not null)
+        return Limpar(tituloCabecalho.InnerText);
+
+    return ExtrairTituloSecao(secao);
 }
 
 static string ExtrairTituloSecao(HtmlNode? secao)
