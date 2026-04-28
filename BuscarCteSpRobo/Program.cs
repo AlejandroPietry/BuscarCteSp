@@ -7,8 +7,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-var arquivoChaves = @"C:\Users\pietr\Downloads\Chaves Julho 2022.txt";
-//var arquivoChaves = @"C:\Users\pietr\Downloads\chaveQueHouveramErros.txt";
+//var arquivoChaves = @"C:\Users\pietr\Downloads\Chaves Julho 2022.txt";
+var arquivoChaves = @"C:\Users\pietr\Downloads\chaveQueHouveramErros.txt";
 
 var outputDir = @"C:\Users\pietr\OneDrive\Documentos\xmlrobo";
 
@@ -53,8 +53,11 @@ Console.WriteLine("Pressione ENTER para iniciar o processamento...");
 Console.ReadLine();
 
 var baixados = 0;
+var errosPath = Path.Combine(outputDir, "erros.txt");
 var erros = new List<object>();
 var random = new Random();
+
+File.WriteAllText(errosPath, string.Empty, Encoding.UTF8);
 
 for (var i = 0; i < chaves.Count; i++)
 {
@@ -71,7 +74,7 @@ for (var i = 0; i < chaves.Count; i++)
             Log($"ERRO na chave {i + 1}/{chaves.Count}: {chave}");
             Log(mensagemUfInvalida);
 
-            erros.Add(new
+            RegistrarErro(erros, errosPath, new
             {
                 Chave = chave,
                 Index = i,
@@ -115,7 +118,7 @@ for (var i = 0; i < chaves.Count; i++)
         Log($"ERRO na chave {i + 1}/{chaves.Count}: {chave}");
         Log(ex.Message);
 
-        erros.Add(new
+        RegistrarErro(erros, errosPath, new
         {
             Chave = chave,
             Index = i,
@@ -136,14 +139,7 @@ Log($"Total salvo: {baixados}/{chaves.Count}");
 Log($"Total de erros: {erros.Count}");
 
 if (erros.Any())
-{
-    var errosPath = Path.Combine(outputDir, "erros.txt");
-    var linhas = erros.Select(e => e.ToString() ?? string.Empty);
-
-    File.WriteAllLines(errosPath, linhas);
-
     Log($"Arquivo de erros salvo em: {errosPath}");
-}
 
 static string GerarCteProcReconstruido(string html, string chaveFallback)
 {
@@ -1097,6 +1093,12 @@ static XElement? ElementoOpcional(XNamespace ns, string nome, string? valor)
 static void Log(string msg)
 {
     Console.WriteLine($"[CTE PROC BOT] {DateTime.Now:HH:mm:ss} - {msg}");
+}
+
+static void RegistrarErro(List<object> erros, string errosPath, object erro)
+{
+    erros.Add(erro);
+    File.AppendAllText(errosPath, (erro.ToString() ?? string.Empty) + Environment.NewLine, Encoding.UTF8);
 }
 
 static class DadosFixos
